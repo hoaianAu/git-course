@@ -1,0 +1,20 @@
+
+BTVN GIT 
+
+1. Giải thích các câu lệnh
+git init //Khởi tạo một repository Git mới trong thư mục hiện tại.
+git add <file_name>  //Thêm file cụ thể vào Staging Area (khu vực chuẩn bị commit).
+git add . // Thêm TẤT CẢ các thay đổi trong thư mục hiện tại và thư mục con vào Staging Area.
+git commit -m"message"  // Lưu các thay đổi từ Staging Area vào Repository với một message mô tả.
+
+**********************************
+
+2. Liệt kê các file theo từng vùng 
+a. Tạo 3 file : file1, file2, file 3 ---> Working Directory
+b. Chạy lệnh : Git init ---> Working Directory
+c. Chạy lệnh: git commit -m"init project"   ----> Không commit được vì staging area trống, trạng thái không thay đổi
+d. Chạy lệnh: git add file1 ---> file1 trong Staging, file2, file3 trong Working Directory
+e. Chạy lệnh: git commit -m "add file1" ----> file2, file3 trong Working Directory, file1 trong Repository 
+f. Chạy lệnh: git add file ---> Trạng thái không thay đổi, không có file nào tên "file" 
+
+
